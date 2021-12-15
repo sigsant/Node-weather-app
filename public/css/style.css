@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    padding: 1em 1em;
+    background-color: black;
+    color: white;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    padding: 0em 3em;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+header > h1 {
+    margin-left: 0.8em;
+}
+
+main {
+    padding: 3em 1em;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2em 0em;
+    background-color: black;
+    color: white;
+}
+
+h2, p{
+    margin-bottom: 1em;
+}
+
+form button {
+    padding: 0em .8em;
+    margin-left: .5em;
+    color: white;
+    background: #8888;
+    cursor: pointer;
+}
+form input {
+    border-radius: 5px;
+    padding: .2em 0em;
+    text-indent: 1em;
+}
+
+img {
+    max-width: 100%;
+    width: 100px;
+    margin-bottom: 1em;
+}
+
+.navlink {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.cabecera {
+    padding: 2em;
+}
+
+.msg {
+    padding: 0em 2em;
+}
+
+#separator { 
+    flex: 1 auto;
+}
+
+#weather-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-error {
+    padding: 1em 0em;
+    color: darkred;
+    font-weight: bold;
+    display: none;
+}
+
+#info-place, #data-weather p {
+    font-weight: bold;
+}
+
+#info-weather {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+
+#data-weather {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    footer {
+        text-align: center;
+    }
+}
+

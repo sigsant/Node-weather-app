@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Index</title>
+    </head>
+    <body>
+        {{>header}}
+        <main>
+            <p>Busca el tiempo que hace en una ciudad del mundo al alcance de tu mano</p>
+            <div id="weather-form">
+                <form>
+                    <input type="search">
+                    <button>Search</button>
+                </form>
+            </div>
+
+
+            <p id="info-error"></p>
+            <div id="info-weather">
+                <img id="weather-icon" src="" alt="">
+                <p id="info-place"></p>
+                <div id="data-weather">
+                    <p>Clima: <span id="data-desc"></span ></p>
+                    <p>Temperatura: <span id="data-temp"></span>ºC</p>
+                    <p>Probabilidad de lluvia: <span id="data-prec"></span>%</p>
+                </div>
+            </div>
+        </main>
+        {{>footer}}
+    </body>
+    <script src="js/index.js"></script>
+</html>
