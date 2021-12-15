@@ -46,8 +46,6 @@ app.get('/weather', (req, res) => {
             })
         })
     })
-
-    console.log(req.query)
 })
 
 app.get('/help', (req,res) => {
