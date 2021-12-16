@@ -23,14 +23,15 @@ header > h1 {
 }
 
 main {
-    padding: 3em 1em;
+    padding: 1em 1em;
+    border: 1px solid blue;
 }
 
 footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 2em 0em;
+    padding: 1em 0em;
     background-color: black;
     color: white;
 }
@@ -42,9 +43,8 @@ h2, p{
 form button {
     padding: 0em .8em;
     margin-left: .5em;
-    color: white;
-    background: #8888;
     cursor: pointer;
+    font-weight: bold;
 }
 form input {
     border-radius: 5px;
@@ -54,7 +54,7 @@ form input {
 
 img {
     max-width: 100%;
-    width: 100px;
+    width: 70px;
     margin-bottom: 1em;
 }
 
@@ -75,6 +75,10 @@ img {
 
 #separator { 
     flex: 1 auto;
+}
+
+#introductio {
+    /* border: 1px solid red; */
 }
 
 #weather-form {
@@ -115,8 +119,22 @@ img {
         flex-direction: column;
         gap: 0.5em;
     }
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
     footer {
         text-align: center;
+    }
+    #introductio {
+        width: 20em;
+        line-height: 1.5em;
+    }
+    #weather-form {
+        margin-top: .5em;
     }
 }
 
