@@ -24,7 +24,6 @@ header > h1 {
 
 main {
     padding: 1em 1em;
-    border: 1px solid blue;
 }
 
 footer{
@@ -75,10 +74,6 @@ img {
 
 #separator { 
     flex: 1 auto;
-}
-
-#introductio {
-    /* border: 1px solid red; */
 }
 
 #weather-form {
