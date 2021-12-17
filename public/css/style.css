@@ -23,6 +23,11 @@ header > h1 {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 1em 1em;
 }
 
@@ -33,6 +38,7 @@ footer{
     padding: 1em 0em;
     background-color: black;
     color: white;
+    text-align: center;
 }
 
 h2, p{
@@ -108,28 +114,34 @@ img {
     align-items: center;
 }
 
-@media screen and (max-width: 450px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
+@media screen {
+    @media (max-width: 580px) {
+        header {
+            background-color: brown;
+        }
+        footer {
+            background-color: brown;
+        }
+        #introductio{
+            width: 27em;
+            margin-top: 1em;
+        }
+        #weather-form {
+            margin: 1em 0em;
+        }
     }
-    main {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    footer {
-        text-align: center;
-    }
-    #introductio {
-        width: 20em;
-        line-height: 1.5em;
-    }
-    #weather-form {
-        margin-top: .5em;
+    @media (max-width: 450px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+        #introductio {
+            width: 20em;
+            line-height: 1.5em;
+        }
+        #weather-form {
+            margin-top: .5em;
+        }
     }
 }
-
