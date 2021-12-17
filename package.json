@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js -e js, hbs"
+    "start":"node app.js",
+    "dev": "nodemon app.js -e js, hbs"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.9",
+    "nodemon": "^2.0.15",
     "grunt": "^1.4.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-ts": "^6.0.0-beta.22"
