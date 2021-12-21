@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About</title>
+</head>
+<body>
+    {{>header}}
+    <main>
+        <h2>{{title}}</h2>
+        <div id="info">
+            <div id="info-app">
+                <p>
+                    WeatherApp permite saber el tiempo metereólogico de un lugar buscado por el usuario, empleando las API de geolocalización de  <a href="https://www.mapbox.com">Mapbox</a> y la API de tiempo meteorológico de <a href="https://weatherstack.com">Weather Stack</a>.
+                </p>
+            </div>
+            <div id="info-stack">
+            <p>
+                La aplicación ha sido creada con las siguientes tecnologías y librerías:
+            </p>
+            
+            <ul>
+                <li>Node js y Handlebars</li>
+                <li>Typescript</li>
+                <li>Playwright (Testeo EndToEnd)</li>
+            </ul>
+            
+            <p>El código de la aplicación es accesible desde el enlace de <a href="https://github.com/sigsant/Node-weather-app"> Github</a></p>
+            </div>
+        </div>
+    </main>
+    {{>footer}}
+</body>
+</html>
