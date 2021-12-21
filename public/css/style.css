@@ -121,14 +121,6 @@ img {
 }
 
 @media screen {
-    @media (max-width: 580px) {
-        header {
-            background-color: brown;
-        }
-        footer {
-            background-color: brown;
-        }
-    }
     @media (max-width: 450px) {
         header {
             display: flex;
@@ -140,7 +132,7 @@ img {
             line-height: 1.5em;
         }
         #weather-form {
-            margin-top: .5em;
+            margin: 0em;
         }
     }
 }
