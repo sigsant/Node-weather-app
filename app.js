@@ -48,14 +48,13 @@ app.get('/weather', (req, res) => {
     })
 })
 
-app.get('/help', (req,res) => {
-    res.render('help', {
-        title: "Página de ayuda",
-        msg: "Página de ayuda de la aplicación Weather App"
+app.get('/about', (req,res) => {
+    res.render('about', {
+        title: "About this page",
     });
 })
 
-app.get('/help/*', (req, res) => {
+app.get('/about/*', (req, res) => {
     res.render('404', {
         errorMsg: "Article not found"
     })
