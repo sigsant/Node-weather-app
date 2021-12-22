@@ -19,9 +19,9 @@ const geomap = (address: string, callback: any) =>{
         
         const {features} = response.body
         if(error) {
-            callback("Imposible conectarse al servicio de MapBox", undefined)
-        } else if (features[0].length === 0 || response.statusCode != 200) {
-            callback("Error  en los datos introducidos en la api", response.statusCode)
+            callback("Unable to connect to Mapbox service", undefined)
+        } else if (features.length === 0 || response.statusCode != 200) {
+            callback("No location found. Please, perform another search", response.statusCode)
         } else {
 
             const geoData = {
