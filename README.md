@@ -6,7 +6,7 @@ La aplicación fue creada como un proyecto simple para introducirme en el ámbit
 
 ## Tecnologías
 
-* Backend: **Nodejs**, **Express**, **Hablebars**
+* Backend: **Nodejs**, **Express**, **Handlebars**
 * Testeo end2end: **Playwright**
 * **Typescript**
 
