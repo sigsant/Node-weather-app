@@ -1,4 +1,4 @@
-# Node-Weather-AppNode-Weather-App
+# Node-Weather-App
 
 Node-Weather-App es una aplicación web que muestra el tiempo en un lugar del mundo establecido por el usuario. 
 
